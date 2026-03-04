@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pico.amber.css">
+</head>
+<body>
+    <nav class="topnav">
+        <a href="index.html">Home</a> <!-- honestly this is a kinda bad idea, having a subpage for each game but it might work-->
+        <a href="factorio.html">Factorio</a>
+        <a href="satisfactory.html">Satisfactory</a>
+        <a href="mindustry.html">Mindustry</a>
+        <a href="captain-of-industry.html">Captain of Industry</a>
+    </nav>
+
+    <header>
+        <div class="grid">
+            <div>
+                <img src="" alt="Poster of automation games">
+
+                <p>Sjálfvirknileikir eru sérstakur leikjaflokkur þar sem megináherslan er á að hanna, byggja og betrumbæta flókin kerfi sem starfa sjálfkrafa, eins og sést vel í leikjum á borð við Factorio, Satisfactory og Mindustry. Ólíkt hefðbundnum leikjum, sem oft snúast um bardaga, söguþráð eða hraða ákvarðanatöku, krefjast sjálfvirknileikir þolinmæði, kerfishugsunar og stöðugrar greiningar á flæði auðlinda, orku og tíma. Spilarinn er sífellt að leysa vandamál sem hann skapaði sjálfur fyrr í leiknum, þar sem hver lausn leiðir af sér nýjar flækjur. Þetta gerir upplifunina meira líkt verkfræði- eða skipulagsverkefni en hefðbundnum „sigur eða tap“-leik, og umbunin felst ekki í einu augnabliki heldur í því að sjá óreiðu breytast smám saman í skilvirkt og sjálfbært kerfi.</p>
+            </div>
+            <div>
+                <div class="fade-container">
+                    <div class="fade-item">
+                        <h2>Factorio Viðburður</h2>
+                        <p>Factorio Viðburðurinn mun vera 12/07/2026, mun vera speedrun-mót, fyrst til að klára Krastorio 2 modpack-inn vinnur 10,000 krónur</p>
+                        
+                    </div>
+                    <div class="fade-item">
+                        <h2>Satisfactory Viðburður</h2>
+                        <p>Factorio Viðburðurinn mun vera 12/07/2026, mun vera speedrun-mót, fyrst til að klára Krastorio 2 modpack-inn vinnur 10,000 krónur</p>
+
+                    </div>
+                    <div class="fade-item">
+                        <h2>Mindustry Viðburður</h2>
+                        <p>Factorio Viðburðurinn mun vera 12/07/2026, mun vera speedrun-mót, fyrst til að klára Krastorio 2 modpack-inn vinnur 10,000 krónur</p>
+
+                    </div>
+                    <div class="fade-item">
+                        <h2>Captain of Industry Viðburður</h2>
+                        <p>Factorio Viðburðurinn mun vera 12/07/2026, mun vera speedrun-mót, fyrst til að klára Krastorio 2 modpack-inn vinnur 10,000 krónur</p>
+
+                    </div>
+                    <div class="fade-item">
+                        <h2>Sjálfvirkarleiki Viðburður</h2>
+                        <p>Factorio Viðburðurinn mun vera 12/07/2026, mun vera speedrun-mót, fyrst til að klára Krastorio 2 modpack-inn vinnur 10,000 krónur</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <div class="grid">
+        <div class="game">
+            <p>Factorio</p>
+
+            <details>
+                <summary>Sýna Meir</summary> <!-- Might need to fix this going down with the rest of <details> but it might be alright -->
+                
+                <div class="body-text"> <!-- needs to be more indepth-->
+                <img src="" alt="this is the game poster">
+                <p>Factorio is a 2d top-down factory-builder automation game, released 25/02/2016, developed by Wube Software</p>
+                </div>
+            </details>
+        </div>
+        <div class="game">
+            <p>Satisfactory</p>
+
+            <details>
+                <summary>Sýna Meir</summary> 
+                
+                <div class="body-text">
+                    <img src="" alt="this is the game poster">
+                    <p>Satisfactory is a 3d first-person factory-builder automation game, released 2019, developed by Coffee Stain Studios</p>
+                </div>
+            </details>
+        </div>
+        <div class="game">
+            <p>Mindustry</p>
+
+            <details>
+                <summary>Sýna Meir</summary>
+                
+                <div class="body-text">
+                    <img src="" alt="this is the game poster">
+                    <p>Mindustry is a 2d top-down real-time strategy tower-defence automation game, released 04/2017, developed by Anuken</p>
+                </div>
+            </details>
+        </div>
+        <div class="game">
+            <p>Captain of Industry</p>
+
+            <details>
+                <summary>Sýna Meir</summary>
+                
+                <div class="body-text">
+                    <img src="" alt="this is the game poster">
+                    <p>Captain of Industry is a 3d top-down factory-builder automation game, released 31/05/2022, developed by MaFi Games</p>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <!-- add a square of text which fades between 5 events, one for each game, then one for a overall automation games convention, add a bit of moving text to the topnav which says the satisfactory event is delayed-->
+
+    
+    <script>
+        document.querySelectorAll("details").forEach(details => {
+            details.addEventListener("toggle", () => {
+            if (details.open) {
+                document.querySelectorAll(".game details").forEach(other => {
+                if (other !== details) {
+                    other.open = false;
+                }
+                });
+            }
+            });
+        });
+    </script>
+
+</body>
+</html>
